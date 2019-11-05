@@ -1,0 +1,72 @@
+.heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 754px;
+  position: relative;
+  left: calc(50% - 377px); }
+  .heading__main {
+    font-family: "Muli", sans-serif;
+    font-weight: 900;
+    font-size: 64px;
+    color: #fff;
+    margin-top: 85px; }
+  .heading__text {
+    font-size: 24px;
+    color: white;
+    margin-top: 22px; }
+  .heading__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 226px;
+    height: 56px;
+    border-radius: 64px;
+    background-color: #fff;
+    color: #253757;
+    margin-top: 42px;
+    border: 1px solid transparent; }
+    .heading__link:hover {
+      color: #181818;
+      background: #f7f7f7 -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), to(#f1f1f1));
+      background: #f7f7f7 linear-gradient(#f7f7f7, #f1f1f1); }
+    .heading__link:active {
+      color: #333333;
+      border: 1px solid #cccccc;
+      background: #eeeeee -webkit-gradient(linear, left top, left bottom, from(#eeeeee), to(#e0e0e0));
+      background: #eeeeee linear-gradient(#eeeeee, #e0e0e0);
+      -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+              box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset; }
+
+@media screen and (max-width: 899px) {
+  .heading {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    position: static; }
+    .heading__main {
+      font-size: 30px;
+      padding: 0 40px;
+      text-align: center; }
+    .heading__text {
+      font-size: 20px;
+      color: white;
+      margin-top: 22px;
+      padding: 0 40px;
+      text-align: center; } }
+
+/*# sourceMappingURL=heading.css.map */

@@ -1,0 +1,114 @@
+.slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 640px;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 80px;
+  left: 80px;
+  z-index: 1;
+  position: relative; }
+  .slider__img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: relative; }
+  .slider__networks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .slider__link {
+    display: block;
+    margin-right: 85px;
+    font-weight: 800;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #253757;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg); }
+  .slider__intro--box {
+    position: absolute;
+    width: 265px;
+    top: 562px;
+    left: 25px; }
+  .slider__link--intro {
+    font-weight: 800;
+    font-size: 12.6px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #56ccf2; }
+  .slider__text--intro {
+    font-weight: 900;
+    font-size: 19.6px;
+    color: #fff; }
+  .slider__button {
+    position: absolute;
+    top: calc(50% - 10px);
+    right: calc(100% + 8px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 162px;
+    height: 64px;
+    border-radius: 50px;
+    z-index: 3; }
+    .slider__button--left {
+      position: relative;
+      background-color: #fcc304;
+      border-radius: 50% 0 0 50%;
+      width: 50%;
+      height: 100%;
+      -webkit-transition: 1s;
+      transition: 1s; }
+      .slider__button--left:hover {
+        background-color: #8a8a21;
+        cursor: pointer; }
+    .slider__button--right {
+      position: relative;
+      background-color: #fcc304;
+      border-radius: 0 50% 50% 0;
+      width: 50%;
+      height: 100%;
+      -webkit-transition: 1s;
+      transition: 1s; }
+      .slider__button--right:hover {
+        background-color: #8a8a21;
+        cursor: pointer; }
+
+.arrow {
+  display: block;
+  margin: 20px auto; }
+
+@media screen and (max-width: 899px) {
+  .slider {
+    position: static;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
+    width: 100%; }
+    .slider__networks {
+      display: none; } }
+
+/*# sourceMappingURL=slider.css.map */
