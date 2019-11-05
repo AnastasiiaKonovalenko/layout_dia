@@ -6,7 +6,10 @@
       flex-wrap: nowrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  width: 948px;
+  position: relative;
+  left: 10%; }
   .nav__list {
     margin: 0;
     width: 100%;
@@ -36,6 +39,8 @@
       transition: 0.5s;
       -webkit-animation: nav_decor;
               animation: nav_decor; }
+    .nav__item:last-child::after {
+      height: 4px; }
     .nav__item:nth-child(6) {
       margin-right: 134.16px; }
     .nav__item:first-child {
@@ -62,30 +67,30 @@
         -webkit-transition: 0.5s;
         transition: 0.5s; }
 
-@media screen and (max-width: 999px) {
-  .nav__item:nth-child(6) {
-    margin-right: 62.4px; }
-  .nav__item:first-child {
-    margin-right: 62.4px; } }
-
 @media screen and (max-width: 899px) {
-  .nav__list {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-  .nav__item {
-    font-size: 30px;
-    line-height: 1.25; }
-  .nav__item:first-child {
-    margin-bottom: 50px; }
-  .nav__link--hover {
-    font-size: 62px; } }
+  .nav {
+    position: static;
+    width: 100%; }
+    .nav__list {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+    .nav__item {
+      font-size: 30px;
+      line-height: 1.25;
+      margin: 0; }
+      .nav__item:first-child, .nav__item:nth-child(6) {
+        margin-right: 0; }
+    .nav__item:first-child {
+      margin-bottom: 50px; }
+    .nav__link--hover {
+      font-size: 62px; } }
 
 /*# sourceMappingURL=nav.css.map */

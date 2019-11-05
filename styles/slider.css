@@ -45,7 +45,7 @@
     position: absolute;
     width: 265px;
     top: 562px;
-    left: 25px; }
+    left: 8px; }
   .slider__link--intro {
     font-weight: 800;
     font-size: 12.6px;
@@ -54,7 +54,7 @@
     color: #56ccf2; }
   .slider__text--intro {
     font-weight: 900;
-    font-size: 19.6px;
+    font-size: 20px;
     color: #fff; }
   .slider__button {
     position: absolute;
@@ -107,10 +107,15 @@
         -ms-flex-align: center;
             align-items: center;
     margin: 0;
-    width: 100%; }
+    width: 100vw;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+    .slider__img {
+      width: 100vw; }
     .slider__networks {
       display: none; }
     .slider__intro--box {
-      top: 1062px; } }
+      top: 1062px;
+      left: 98px; } }
 
 /*# sourceMappingURL=slider.css.map */

@@ -1,5 +1,6 @@
 .header {
   height: 848px;
+  max-width: 1600px;
   background: url("../images/method-draw-image.svg") no-repeat right;
   background-size: cover;
   position: relative;
@@ -9,7 +10,17 @@
 
 @media screen and (max-width: 899px) {
   .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     height: 1200px;
+    width: 100vw;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     background-color: #56ccf2; } }
 
 /*# sourceMappingURL=header.css.map */
