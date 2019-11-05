@@ -109,6 +109,8 @@
     margin: 0;
     width: 100%; }
     .slider__networks {
-      display: none; } }
+      display: none; }
+    .slider__intro--box {
+      top: 1062px; } }
 
 /*# sourceMappingURL=slider.css.map */
