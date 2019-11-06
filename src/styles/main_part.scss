@@ -303,7 +303,11 @@
 //part testimonials
 
 .testimonials {
-  margin-top: 100px;
+  padding-top: 147px;
+  background-color: #fff;
+  width: 100vw;
+  max-width: 1600px;
+  margin-top: -47px;
 
   &__box {
     width: 80%;
@@ -329,6 +333,7 @@
     background: #fefefe;
     box-shadow: 16px 16px 32px rgba(0, 0, 0, 0.05);
     margin-right: 78px;
+    z-index: 2;
 
     &:first-child {
       margin-left: 24px;
@@ -413,6 +418,18 @@
         #56ccf2;
       border-radius: 2px;
     }
+
+    &--2:after {
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%,
+      rgba(255, 255, 255, 0) 100%),
+        #fcc304;
+    }
+
+    &--3:after {
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%,
+      rgba(255, 255, 255, 0) 100%),
+        #f25656;
+    }
   }
 
   &__name {
@@ -431,6 +448,174 @@
     text-transform: uppercase;
     color: #56ccf2;
   }
+}
+
+.vision {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url("../images/vision-bg.jpg") no-repeat center;
+  background-position-y: -230%;
+  padding-top: 320px;
+  width: 100vw;
+  height: 865px;
+  position: relative;
+  bottom: 160px;
+  z-index: 1;
+  text-align: center;
+
+  //&__box {
+  //  background: url("../images/vision-bg.jpg") no-repeat;
+  //  height: 100%;
+  //}
+  &__text {
+    width: 754px;
+    font-weight: 600;
+    font-size: 24px;
+  }
+
+  &__link {
+    margin: 55px auto 0;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 226px;
+    height: 56px;
+    background: #2f80ed;
+    border-radius: 64px;
+
+    &:hover {
+      background: #0af linear-gradient(#0af, #0ae);
+    }
+
+    &:active {
+      color: rgb(51, 51, 51);
+      border: 1px solid rgb(204, 204, 204);
+      background: rgb(238, 238, 238) linear-gradient(rgb(238, 238, 238),
+      rgb(224, 224, 224));
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+    }
+  }
+}
+
+//part contacts
+
+.contacts {
+  margin-top: -522px;
+  width: 100vw;
+  max-width: 1600px;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+
+  &__block-form {
+    width: 656px;
+    margin-right: 128px;
+  }
+
+  &__box {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  &__form {
+    margin-top: 104px;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+
+  &__input {
+    background-color: #fcfcfd;
+    margin-bottom: 48px;
+    font-size: 14px;
+    color: #152032;
+    font-weight: 800;
+    line-height: 10px;
+    width: 656px;
+    border: none;
+    border-bottom: 1px solid #e1e1e1;
+  }
+
+  &__button {
+    margin-top: 104px;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 226px;
+    height: 56px;
+    background: #2f80ed;
+    border-radius: 64px;
+
+    &:hover {
+      background: #0af linear-gradient(#0af, #0ae);
+    }
+
+    &:active {
+      color: rgb(51, 51, 51);
+      border: 1px solid rgb(204, 204, 204);
+      background: rgb(238, 238, 238) linear-gradient(rgb(238, 238, 238),
+      rgb(224, 224, 224));
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+    }
+  }
+}
+
+.address {
+  width: 362px;
+
+  &__title {
+    font-weight: 800;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #334563;
+  }
+
+  &__item {
+    font-weight: 900;
+    font-size: 24px;
+    font-style: normal;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #56ccf2;
+  }
+
+  &__virtual {
+    display: flex;
+    margin-top: 53px;
+  }
+
+  &__icon {
+    display: block;
+    margin-right: 48px;
+  }
+}
+
+.pic {
+  width: 32px;
+  height: 32px;
+}
+
+.twit {
+  background: url("../images/tw.svg");
+}
+
+.inst {
+  background: url("../images/inst.svg");
+}
+
+.fb {
+  background: url("../images/fb.svg");
 }
 
 @media screen and (max-width: 899px) {

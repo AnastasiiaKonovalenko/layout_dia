@@ -1,0 +1,49 @@
+.footer {
+  width: 100vw;
+  max-width: 1600px;
+  padding-bottom: 83px;
+  padding-top: 152px;
+
+  &__box {
+    display: flex;
+    width: 80%;
+    margin: auto;
+  }
+
+  &__design {
+    width: 460px;
+    margin-right: 127px;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #253757;
+  }
+
+  &__nav {
+    width: 580px;
+    position: static;
+
+    & .link {
+      font-weight: 800;
+      font-size: 16px;
+      line-height: 1.5;
+      color: #253757;
+    }
+  }
+
+  & .nav__item {
+    line-height: 1.5;
+  }
+
+  & .nav__item:first-child {
+    margin-right: 63px;
+    font-weight: 800;
+    line-height: 1.5;
+    font-size: 16px;
+    color: #253757;
+  }
+
+  & .nav__item:last-child::after {
+    height: 0;
+  }
+}
