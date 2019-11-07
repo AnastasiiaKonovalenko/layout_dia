@@ -1,8 +1,8 @@
 .header-bg {
+  padding: 0;
   height: 860px;
-  width: 100%;
+  width: 100vw;
   position: absolute;
-  padding: 45px;
   background: linear-gradient(115deg, #56ccf2 75%, #f8fcfb 75%, #f8fcfb 100%);
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
@@ -10,5 +10,11 @@
 .header__box {
   width: 72%;
   margin: auto; }
+
+@media screen and (max-width: 999px) {
+  .header-bg {
+    display: none; }
+  .header {
+    background-color: #56ccf2; } }
 
 /*# sourceMappingURL=header.css.map */
