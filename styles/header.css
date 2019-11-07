@@ -1,6 +1,14 @@
-.header {
-  background: url("../images/method-draw-image.svg") no-repeat;
-  border: 1px solid transparent;
-  padding-top: 48px; }
+.header-bg {
+  height: 860px;
+  width: 100%;
+  position: absolute;
+  padding: 45px;
+  background: linear-gradient(115deg, #56ccf2 75%, #f8fcfb 75%, #f8fcfb 100%);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.header__box {
+  width: 72%;
+  margin: auto; }
 
 /*# sourceMappingURL=header.css.map */
