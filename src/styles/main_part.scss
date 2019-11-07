@@ -60,11 +60,12 @@
 
 .specification {
   background-color: #fff;
-  width: 100%;
+  width: 100vw;
 
-  &__directions {
+  &__box {
     width: 72%;
     margin: 0 auto;
+    max-width: 1600px;
   }
 
   &__heading {
@@ -82,9 +83,10 @@
 
 .directions {
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
   padding-bottom: 162px;
+  margin-left: -54px;
 
   &__item {
     width: 264px;
@@ -125,7 +127,7 @@
 
   &__item {
     width: 362px;
-    margin-right: 187px;
+    margin-right: 50px;
   }
 
   &__text {
@@ -233,8 +235,8 @@
 .features {
   position: relative;
   width: 100vw;
-  max-width: 1600px;
   height: 976px;
+  max-width: 1600px;
   background: #56ccf2;
   overflow: hidden;
   bottom: 47px;
@@ -306,8 +308,8 @@
   padding-top: 147px;
   background-color: #fff;
   width: 100vw;
-  max-width: 1600px;
   margin-top: -47px;
+  max-width: 1600px;
 
   &__box {
     width: 72%;
@@ -338,10 +340,15 @@
     &:first-child {
       margin-left: 24px;
     }
+
+    &:last-child {
+      margin: 0;
+    }
   }
 
   .testimonials-img-block {
     position: relative;
+    right: 20px;
     width: 127px;
     height: 130px;
   }
@@ -458,6 +465,7 @@
   background-position-y: -230%;
   padding-top: 320px;
   width: 100vw;
+  max-width: 1600px;
   height: 865px;
   position: relative;
   bottom: 160px;
@@ -505,9 +513,9 @@
 .contacts {
   margin-top: -522px;
   width: 100vw;
-  max-width: 1600px;
   display: flex;
   justify-content: center;
+  max-width: 1600px;
   z-index: 1;
 
   &__block-form {
@@ -554,6 +562,7 @@
     height: 56px;
     background: #2f80ed;
     border-radius: 64px;
+    border: none;
 
     &:hover {
       background: #0af linear-gradient(#0af, #0ae);
@@ -618,108 +627,108 @@
   background: url("../images/fb.svg");
 }
 
-@media screen and (max-width: 899px) {
-
-  .body__main {
-    width: 100vw;
+@media screen and (max-width: 1320px) {
+  .contacts__box {
+    justify-content: space-between;
+  }
+  .contacts__block-form {
+    margin-right: 40px;
+    width: 356px;
   }
 
-  .main {
+  .form {
+    width: 356px;
+
+    &__input {
+      width: 356px;
+    }
+  }
+
+  .testimonials__item {
+    padding: 80px 32px 32px;
+    box-sizing: content-box;
+    height: 100%;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  .testimonials__box {
+    width: 100%;
     margin: 0;
-    padding: 40px 0;
   }
 
-  .subheading {
-    font-size: 24px;
+  .testimonials .subheading,
+  .testimonials .section-heading {
+    padding-left: 140px;
+  }
+
+  .testimonials__item:first-child {
+    margin-left: 0;
+  }
+
+  .process__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  .directions {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__item {
+      margin: 0;
+      padding-bottom: 40px;
+    }
+
+    &__img {
+      position: relative;
+      left: calc(50% - 80px);
+    }
+  }
+  .testimonials__item {
+    margin: 0;
+    padding-bottom: 40px;
+  }
+
+  .testimonials__cards {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .welcome {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: 100vw;
-    padding: 0 40px 80px;
+    padding: 0 40px 90px;
     box-sizing: border-box;
-
-    &__text {
-      font-size: 16px;
-    }
   }
 
-  .directions {
-    display: flex;
+  .contacts__box {
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-
-    &__item {
-      margin: 0 0 40px;
-
-      &:last-child {
-        margin: 0;
-      }
-    }
+    justify-content: center;
   }
 
-  .process {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    &__item {
-      margin: 0;
-    }
-  }
-
-  .cards {
-    display: grid;
-    grid-template-columns: 240px;
-    grid-row-gap: 20px;
-
-    &__item {
-      &:first-child,
-      &:nth-child(3) {
-        margin-top: 0;
-      }
-    }
-  }
-
-  .features {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .vision__text {
     width: 100vw;
+  }
+}
 
-    &__info {
-      display: flex;
-      flex-direction: column;
-      margin: 0;
-    }
+@media screen and (max-width: 585px) {
+  .cards {
+    grid-template-columns: 240px;
+    grid-row-gap: 30px;
 
-    &__sunheading {
-      width: 100vw;
-    }
-
-    .rectangle {
-      display: none;
-    }
-
-    .icon {
-      display: block;
-      //position: relative;
-      //left: calc(50% - 48px);
-      margin: 0;
-      width: 32px;
-      height: 32px;
-      background-size: contain;
-    }
-
-    &__text {
-      margin: 0 0 40px;
-      font-size: 14px;
+    &__item:first-child,
+    &__item:nth-child(3) {
+      margin-top: 0;
     }
   }
 }

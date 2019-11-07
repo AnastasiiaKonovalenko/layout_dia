@@ -36,6 +36,18 @@
     transform: rotate(90deg);
   }
 
+  &__fb:hover {
+    color: #157dc3;
+  }
+
+  &__twit:hover {
+    color: #fcca20;
+  }
+
+  &__inst:hover {
+    color: #dd2c86;
+  }
+
   &__intro--box {
     position: absolute;
     width: 265px;
@@ -98,27 +110,40 @@
   margin: 20px auto;
 }
 
-@media screen and (max-width: 899px) {
+@media screen and (max-width: 1320px) {
   .slider {
-    position: static;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    width: 100vw;
-    box-sizing: border-box;
+    &__button {
 
-    &__img {
-      width: 100vw;
+      top: calc(100% - 32px);
+      left: calc(50% - 81px);
+    }
+
+    &__link {
+      display: inline-block;
+      transform: none;
+      margin-right: 150px;
     }
 
     &__networks {
-      display: none;
+      top: 110%;
+      display: flex;
+      left: calc(50% - 280px);
     }
+  }
+}
 
-    &__intro--box {
-      top: 1062px;
-      left: 98px;
+@media screen and (max-width: 1184px) {
+  .slider {
+
+    width: 100vw;
+    &__img {
+      width: 100vw;
     }
+  }
+}
+
+@media screen and (max-width: 899px) {
+  .slider__networks {
+    display: none;
   }
 }
