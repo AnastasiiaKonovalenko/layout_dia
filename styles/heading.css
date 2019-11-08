@@ -61,4 +61,14 @@
     -webkit-box-sizing: border-box;
             box-sizing: border-box; } }
 
+@media screen and (max-width: 585px) {
+  .heading__main {
+    font-size: 36px; }
+  .heading__text {
+    display: block;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding-right: 40px;
+    text-align: justify; } }
+
 /*# sourceMappingURL=heading.css.map */
