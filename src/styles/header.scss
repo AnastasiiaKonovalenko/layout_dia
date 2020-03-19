@@ -1,0 +1,26 @@
+.header-bg {
+  padding: 0;
+  height: 860px;
+  width: 100vw;
+  position: absolute;
+  background: linear-gradient(115deg, #56ccf2 75%, #f8fcfb 75%, #f8fcfb 100%);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.header {
+  &__box {
+    width: 72%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .header-bg {
+    display: none;
+  }
+
+  .header {
+    background-color: #56ccf2;
+  }
+}
